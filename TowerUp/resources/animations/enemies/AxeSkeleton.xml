@@ -1,0 +1,33 @@
+<animations>
+    <animation key="AxeSkeletonIdle">
+        <frame x="0" y="0" width="192" height="140" repeat-x="8"/>
+        <frame x="0" y="140" width="192" height="140"/>
+    </animation>
+    <animation key="AxeSkeletonWalk">
+        <frame x="192" y="140" width="192" height="140" repeat-x="7"/>
+        <frame x="0" y="280" width="192" height="140"/>
+    </animation>
+    <animation key="AxeSkeletonAttack">
+        <frame x="192" y="280" width="192" height="140" repeat-x="7"/>
+        <frame x="0" y="420" width="192" height="140" repeat-x="8"/>
+        <frame x="0" y="560" width="192" height="140" repeat-x="6"/>
+
+        <frame x="1344" y="280" width="192" height="140"/>
+        <frame x="1152" y="280" width="192" height="140"/>
+        <frame x="960" y="280" width="192" height="140"/>
+        <frame x="768" y="280" width="192" height="140"/>
+        <frame x="576" y="280" width="192" height="140"/>
+        <frame x="384" y="280" width="192" height="140"/>
+    </animation>
+    <animation key="AxeSkeletonDeath">
+        <frame x="1152" y="560" width="192" height="140" repeat-x="2"/>
+        <frame x="0" y="700" width="192" height="140" repeat-x="8"/>
+        <frame x="0" y="840" width="192" height="140" repeat-x="2"/>
+    </animation>
+    <animation key="AxeSkeletonBulletAlive">
+        <frame x="576" y="935" width="45" height="45" repeat-x="7"/>
+    </animation>
+    <animation key="AxeSkeletonBulletDead">
+        <frame x="891" y="935" width="45" height="45" repeat-x="5"/>
+    </animation>
+</animations>

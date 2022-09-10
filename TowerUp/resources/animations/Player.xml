@@ -1,0 +1,27 @@
+<animations>
+    <animation key="PlayerIdle">
+        <frame x="0" y="0" width="64" height="64" repeat-x="16" repeat-y="2"/>
+        <frame x="0" y="128" width="64" height="64" repeat-x="2"/>
+    </animation>
+    <animation key="PlayerRun">
+        <frame x="0" y="192" width="64" height="64" repeat-x="12"/>
+    </animation>
+    <animation key="PlayerJump">
+        <frame x="0" y="256" width="64" height="64" repeat-x="13"/>
+    </animation>
+    <animation key="PlayerFall">
+        <frame x="0" y="320" width="64" height="64" repeat-x="11"/>
+    </animation>
+    <animation key="PlayerDash">
+        <frame x="0" y="384" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="PlayerDead">
+        <frame x="0" y="448" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="PlayerShoot">
+        <frame x="0" y="512" width="80" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="PlayerReload">
+        <frame x="0" y="576" width="80" height="64"/>
+    </animation>
+</animations>

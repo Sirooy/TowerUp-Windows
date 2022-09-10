@@ -1,0 +1,14 @@
+<animations>
+    <animation key="CoinDefault">
+        <frame x="0" y="0" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="CoinPickedUp">
+        <frame x="0" y="16" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="HeartDefault">
+        <frame x="0" y="32" width="16" height="16" repeat-x="5"/>
+    </animation>
+    <animation key="HeartPickedUp">
+        <frame x="0" y="48" width="16" height="16" repeat-x="8"/>
+    </animation>
+</animations>

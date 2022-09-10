@@ -1,0 +1,44 @@
+<animations>
+    <animation key="RogueKnightIdle">
+        <frame x="0" y="0" width="100" height="74" repeat-x="4"/>
+    </animation>
+    <animation key="RogueKnightRun">
+        <frame x="400" y="0" width="100" height="74" repeat-x="5"/>
+        <frame x="0"  y="74" width="100" height="74" repeat-x="1"/>
+    </animation>
+    <animation key="RogueKnightJump">
+        <frame x="100" y="74" width="100" height="74" repeat-x="8"/>
+        <frame x="0" y="148"  width="100" height="74" repeat-x="2"/>
+    </animation>
+    <animation key="RogueKnightMagicAttack">
+        <frame x="200" y="148" width="100" height="74" repeat-x="7"/>
+        <frame x="400" y="148" width="100" height="74" repeat-x="1"/>
+        <frame x="0" y="222"   width="100" height="74" repeat-x="1"/>
+    </animation>
+    <animation key="RogueKnightSingleSwordAttack">
+        <frame x="100" y="222" width="100" height="74" repeat-x="7"/>
+        <frame x="700" y="296" width="100" height="74" repeat-x="2"/>
+        <frame x="0" y="370" width="100" height="74" repeat-x="3"/>
+    </animation>
+    <animation key="RogueKnightComboSwordAttack">
+        <frame x="100" y="222" width="100" height="74" repeat-x="8"/>
+        <frame x="0" y="296" width="100" height="74" repeat-x="9"/>
+        <frame x="0" y="370" width="100" height="74" repeat-x="3"/>
+    </animation>
+    <animation key="RogueKnightDeath">
+        <frame x="100" y="74" width="100" height="74" repeat-x="2"/>
+        <frame x="300" y="370" width="100" height="74" repeat-x="6"/>
+        <frame x="0"   y="444" width="100" height="74" repeat-x="2"/>
+    </animation>
+    <animation key="RogueKnightDash1">
+        <frame x="400" y="0" width="100" height="74" repeat-x="1"/>
+        <frame x="200" y="444" width="100" height="74" repeat-x="4"/>
+    </animation>
+    <animation key="RogueKnightDash2">
+        <frame x="600" y="444" width="100" height="74" repeat-x="3"/>
+        <frame x="0" y="518" width="100" height="74" repeat-x="2"/>
+    </animation>
+    <animation key="RogueKnightFly">
+        <frame x="300" y="74" width="100" height="74" repeat-x="3"/>
+    </animation>
+</animations>

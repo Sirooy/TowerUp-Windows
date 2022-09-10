@@ -1,0 +1,14 @@
+<animations>
+    <animation key="FlyingEyeFly">
+        <frame x="0" y="0" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="FlyingEyeAttack1">
+        <frame x="0" y="64" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="FlyingEyeAttack2">
+        <frame x="0" y="128" width="64" height="64" repeat-x="6"/>
+    </animation>
+    <animation key="FlyingEyeDeath">
+        <frame x="0" y="192" width="64" height="64" repeat-x="4"/>
+    </animation>
+</animations>

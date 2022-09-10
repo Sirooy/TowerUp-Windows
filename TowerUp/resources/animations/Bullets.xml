@@ -1,0 +1,142 @@
+<animations>
+    <animation key="DefaultBulletAlive">
+        <frame x="0" y="0" width="16" height="16" repeat-x="4"/>
+    </animation>
+    <animation key="DefaultBulletDead">
+        <frame x="64" y="0" width="16" height="16" repeat-x="4"/>
+    </animation>
+
+    <animation key="DefaultBlackBulletAlive">
+        <frame x="0" y="16" width="16" height="16" repeat-x="4"/>
+    </animation>
+    <animation key="DefaultBlackBulletDead">
+        <frame x="64" y="16" width="16" height="16" repeat-x="4"/>
+    </animation>
+
+    <animation key="SmallWaveBulletAlive">
+        <frame x="128" y="0" width="16" height="16" repeat-x="4"/>
+    </animation>
+    <animation key="SmallWaveBulletDead">
+        <frame x="192" y="0" width="16" height="16" repeat-x="4"/>
+    </animation>
+
+    <animation key="DesertEagleBulletAlive">
+        <frame x="128" y="16" width="16" height="16" repeat-x="4"/>
+    </animation>
+    <animation key="DesertEagleBulletDead">
+        <frame x="192" y="16" width="16" height="16" repeat-x="4"/>
+    </animation>
+
+
+
+
+
+
+    <animation key="FireBallBulletAlive">
+        <frame x="256" y="0" width="32" height="32" repeat-x="4"/>
+    </animation>
+    <animation key="FireBallBulletDead">
+        <frame x="0" y="96" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+    <animation key="BigWaveBulletAlive">
+        <frame x="0" y="32" width="32" height="32" repeat-x="4"/>
+    </animation>
+    <animation key="BigWaveBulletDead">
+        <frame x="0" y="96" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+    <animation key="DefaultFireBallBulletAlive">
+        <frame x="128" y="32" width="32" height="32" repeat-x="4"/>
+    </animation>
+    <animation key="DefaultFireBallBulletDead">
+        <frame x="128" y="64" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+    <animation key="SmallSpellBulletAlive">
+        <frame x="256" y="32" width="32" height="32" repeat-x="4"/>
+    </animation>
+    <animation key="SmallSpellBulletDead">
+        <frame x="128" y="96" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+    <animation key="DefaultFireShotBulletAlive">
+        <frame x="0" y="64" width="32" height="32" repeat-x="4"/>
+    </animation>
+    <animation key="DefaultFireShotBulletDead">
+        <frame x="256" y="64" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+
+
+    <animation key="BigSpellBulletAlive">
+        <frame x="0" y="128" width="48" height="48" repeat-x="8"/>
+    </animation>
+    <animation key="BigSpellBulletDead">
+        <frame x="128" y="96" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+
+    
+
+    <animation key="KamekamehaBulletAlive">
+        <frame x="0" y="176" width="64" height="64" repeat-x="4"/>
+    </animation>
+    <animation key="KamekamehaBulletDead">
+        <frame x="256" y="96" width="32" height="32" repeat-x="4"/>
+    </animation>
+
+    <animation key="BubbleBulletAlive">
+        <frame x="256" y="176" width="24" height="24" repeat-x="4"/>
+    </animation>
+    <animation key="BubbleBulletDead">
+        <frame x="256" y="208" width="24" height="24" repeat-x="4"/>
+    </animation>
+
+    <animation key="CoinBulletAlive">
+        <frame x="0" y="240" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="CoinBulletDead">
+        <frame x="128" y="240" width="16" height="16" repeat-x="3"/>
+    </animation>
+
+    <animation key="WatermelonBulletAlive">
+        <frame x="176" y="240" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="WatermelonBulletDead">
+        <frame x="304" y="240" width="16" height="16" repeat-x="3"/>
+    </animation>
+
+    <animation key="RocketBulletAlive">
+        <frame x="0" y="256" width="16" height="16" repeat-x="5"/>
+    </animation>
+    <animation key="RocketBulletDead">
+        <frame x="80" y="256" width="16" height="16" repeat-x="4"/>
+    </animation>
+
+    <animation key="PineAppleBulletAlive">
+        <frame x="144" y="256" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="PineAppleBulletDead">
+        <frame x="272" y="256" width="16" height="16" repeat-x="3"/>
+    </animation>
+
+    <animation key="IceSpikeBulletAlive">
+        <frame x="256" y="272" width="48" height="32" repeat-x="2"/>
+        <frame x="0" y="304" width="48" height="32" repeat-x="8"/>
+    </animation>
+    <animation key="IceSpikeBulletDead">
+        <frame x="0" y="336" width="48" height="32" repeat-x="7"/>
+    </animation>
+
+
+    <animation key="DefaultExplosion">
+        <frame x="0" y="272" width="32" height="32" repeat-x="8"/>
+    </animation>
+
+    <animation key="IceBlizzard">
+        <frame x="0" y="368" width="64" height="64" repeat-x="6"/>
+        <frame x="0" y="432" width="64" height="64" repeat-x="2"/>
+    </animation>
+
+</animations>

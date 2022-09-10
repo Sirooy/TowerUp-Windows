@@ -1,0 +1,26 @@
+<animations>
+    <animation key="Zone1TrapCircularSaw">
+        <frame x="0" y="0" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="Zone2TrapCircularSaw">
+        <frame x="0" y="64" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="Zone3TrapCircularSaw">
+        <frame x="0" y="128" width="64" height="64" repeat-x="8"/>
+    </animation>
+    <animation key="Zone1TrapProximitySpike">
+        <frame x="0" y="192" width="64" height="32" repeat-x="6"/>
+        <frame x="0" y="224" width="64" height="32" repeat-x="5"/>
+    </animation>
+    <animation key="Zone2TrapProximitySpike">
+        <frame x="0" y="256" width="64" height="32" repeat-x="6"/>
+        <frame x="0" y="288" width="64" height="32" repeat-x="5"/>
+    </animation>
+    <animation key="Zone3TrapProximitySpike">
+        <frame x="0" y="320" width="64" height="32" repeat-x="6"/>
+        <frame x="0" y="352" width="64" height="32" repeat-x="5"/>
+    </animation>
+    <animation key="TrapShooter">
+        <frame x="0" y="416" width="32" height="32" repeat-x="4"/>
+    </animation>
+</animations>

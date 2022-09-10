@@ -1,0 +1,20 @@
+<animations>
+    <animation key="HudHealthBar">
+        <frame x="0" y="0" width="64" height="64" repeat-x="3"/>
+    </animation>
+    <animation key="HudAmmoBar">
+        <frame x="0" y="192" width="16" height="16" repeat-x="3"/>
+    </animation>
+    <animation key="HudAmmoBarReload">
+        <frame x="0" y="208" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="HudCoin">
+        <frame x="0" y="224" width="16" height="16" repeat-x="8"/>
+    </animation>
+    <animation key="HudBossBarContainer">
+        <frame x="0" y="64" width="256" height="64"/>
+    </animation>
+    <animation key="HudBossBarHealthBar">
+        <frame x="0" y="128" width="256" height="64"/>
+    </animation>
+</animations> 

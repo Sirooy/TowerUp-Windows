@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d4e168ed-7747-4540-8b4e-4b46a1c12d44}</ProjectGuid>
+    <RootNamespace>TowerUp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\SFML\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)dependencies\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\SFML\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)dependencies\SFML\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\SFML\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)dependencies\SFML\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\SFML\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)dependencies\SFML\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\modules\AmmoBar.cpp" />
+    <ClCompile Include="src\modules\Animation.cpp" />
+    <ClCompile Include="src\modules\BossHealthBar.cpp" />
+    <ClCompile Include="src\modules\Button.cpp" />
+    <ClCompile Include="src\modules\Checkbox.cpp" />
+    <ClCompile Include="src\modules\CollisionLayer.cpp" />
+    <ClCompile Include="src\modules\Curse.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Camera.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Filter.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Font.cpp" />
+    <ClCompile Include="src\modules\Engine2D\LightSystem.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Listener.cpp" />
+    <ClCompile Include="src\modules\Engine2D\MediaContent.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Music.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Renderer.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Sound.cpp" />
+    <ClCompile Include="src\modules\Engine2D\SoundBuffer.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Sprite.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Text.cpp" />
+    <ClCompile Include="src\modules\Engine2D\Texture.cpp" />
+    <ClCompile Include="src\modules\Engine2D\TileMap.cpp" />
+    <ClCompile Include="src\modules\Engine2D\TileMapLayer.cpp" />
+    <ClCompile Include="src\modules\Entity\BaseItem.cpp" />
+    <ClCompile Include="src\modules\Entity\Bullet.cpp" />
+    <ClCompile Include="src\modules\Entity\BulletGenerator.cpp" />
+    <ClCompile Include="src\modules\Entity\CircularSawTrap.cpp" />
+    <ClCompile Include="src\modules\Entity\Coin.cpp" />
+    <ClCompile Include="src\modules\Entity\CollidableEntity.cpp" />
+    <ClCompile Include="src\modules\Entity\Consumable.cpp" />
+    <ClCompile Include="src\modules\Entity\DesertEagle.cpp" />
+    <ClCompile Include="src\modules\Entity\Door.cpp" />
+    <ClCompile Include="src\modules\Entity\DynamicEntity.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\AxeSkeleton.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\BatEye.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\Boss.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\Enemy.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\FlyingEye.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\PossessedCircularSaw.cpp" />
+    <ClCompile Include="src\modules\Entity\Enemies\RogueKnight.cpp" />
+    <ClCompile Include="src\modules\Entity\Entity.cpp" />
+    <ClCompile Include="src\modules\Entity\EntityFactory.cpp" />
+    <ClCompile Include="src\modules\Entity\Explosion.cpp" />
+    <ClCompile Include="src\modules\Entity\GenericEntity.cpp" />
+    <ClCompile Include="src\modules\Entity\Heart.cpp" />
+    <ClCompile Include="src\modules\Entity\HurtZone.cpp" />
+    <ClCompile Include="src\modules\Entity\IceBlizzard.cpp" />
+    <ClCompile Include="src\modules\Entity\InteractiveEntity.cpp" />
+    <ClCompile Include="src\modules\Entity\Items.cpp" />
+    <ClCompile Include="src\modules\Entity\Player.cpp" />
+    <ClCompile Include="src\modules\Entity\ProximitySpikeTrap.cpp" />
+    <ClCompile Include="src\modules\Entity\ShooterTrap.cpp" />
+    <ClCompile Include="src\modules\Entity\ShootMode.cpp" />
+    <ClCompile Include="src\modules\Entity\Trap.cpp" />
+    <ClCompile Include="src\modules\Entity\VendingMachine.cpp" />
+    <ClCompile Include="src\modules\Entity\WallTrap.cpp" />
+    <ClCompile Include="src\modules\Entity\World.cpp" />
+    <ClCompile Include="src\modules\FinalScreen.cpp" />
+    <ClCompile Include="src\modules\Game.cpp" />
+    <ClCompile Include="src\modules\GameScreen.cpp" />
+    <ClCompile Include="src\modules\GameScreenEnterDoor.cpp" />
+    <ClCompile Include="src\modules\GameScreenExitDoor.cpp" />
+    <ClCompile Include="src\modules\GameScreenPaused.cpp" />
+    <ClCompile Include="src\modules\GameScreenPlayerDead.cpp" />
+    <ClCompile Include="src\modules\GameScreenPlaying.cpp" />
+    <ClCompile Include="src\modules\HealthBar.cpp" />
+    <ClCompile Include="src\modules\Hud.cpp" />
+    <ClCompile Include="src\modules\IntroScreen.cpp" />
+    <ClCompile Include="src\modules\ItemBar.cpp" />
+    <ClCompile Include="src\modules\Kinematics.cpp" />
+    <ClCompile Include="src\modules\LevelGenerator.cpp" />
+    <ClCompile Include="src\modules\MainMenuScreen.cpp" />
+    <ClCompile Include="src\modules\MoneyBar.cpp" />
+    <ClCompile Include="src\modules\PathFinding.cpp" />
+    <ClCompile Include="src\modules\PathFindingFollower.cpp" />
+    <ClCompile Include="src\modules\Physics\AABB.cpp" />
+    <ClCompile Include="src\modules\Physics\Circle.cpp" />
+    <ClCompile Include="src\modules\Physics\Collider.cpp" />
+    <ClCompile Include="src\modules\Physics\CollisionDetection.cpp" />
+    <ClCompile Include="src\modules\Physics\PhysicsEngine.cpp" />
+    <ClCompile Include="src\modules\Random.cpp" />
+    <ClCompile Include="src\modules\Room.cpp" />
+    <ClCompile Include="src\modules\ScreenController.cpp" />
+    <ClCompile Include="src\modules\SettingsScreen.cpp" />
+    <ClCompile Include="src\modules\tinyxml2.cpp" />
+    <ClCompile Include="src\modules\Torch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\ActionQueue.h" />
+    <ClInclude Include="src\modules\AmmoBar.h" />
+    <ClInclude Include="src\modules\Animation.h" />
+    <ClInclude Include="src\modules\AnimationPack.h" />
+    <ClInclude Include="src\modules\BossHealthBar.h" />
+    <ClInclude Include="src\modules\Button.h" />
+    <ClInclude Include="src\modules\Checkbox.h" />
+    <ClInclude Include="src\modules\CollisionLayer.h" />
+    <ClInclude Include="src\modules\Curse.h" />
+    <ClInclude Include="src\modules\Engine2D\Camera.h" />
+    <ClInclude Include="src\modules\Engine2D\Filter.h" />
+    <ClInclude Include="src\modules\Engine2D\Font.h" />
+    <ClInclude Include="src\modules\Engine2D\LightSystem.h" />
+    <ClInclude Include="src\modules\Engine2D\Listener.h" />
+    <ClInclude Include="src\modules\Engine2D\MediaContent.h" />
+    <ClInclude Include="src\modules\Engine2D\Music.h" />
+    <ClInclude Include="src\modules\Engine2D\Renderer.h" />
+    <ClInclude Include="src\modules\Engine2D\Sound.h" />
+    <ClInclude Include="src\modules\Engine2D\SoundBuffer.h" />
+    <ClInclude Include="src\modules\Engine2D\Sprite.h" />
+    <ClInclude Include="src\modules\Engine2D\Text.h" />
+    <ClInclude Include="src\modules\Engine2D\Texture.h" />
+    <ClInclude Include="src\modules\Engine2D\TileMap.h" />
+    <ClInclude Include="src\modules\Engine2D\TileMapLayer.h" />
+    <ClInclude Include="src\modules\Entity\BaseItem.h" />
+    <ClInclude Include="src\modules\Entity\Bullet.h" />
+    <ClInclude Include="src\modules\Entity\BulletGenerator.h" />
+    <ClInclude Include="src\modules\Entity\CircularSawTrap.h" />
+    <ClInclude Include="src\modules\Entity\Coin.h" />
+    <ClInclude Include="src\modules\Entity\CollidableEntity.h" />
+    <ClInclude Include="src\modules\Entity\Consumable.h" />
+    <ClInclude Include="src\modules\Entity\DesertEagle.h" />
+    <ClInclude Include="src\modules\Entity\Door.h" />
+    <ClInclude Include="src\modules\Entity\DynamicEntity.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\AxeSkeleton.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\BatEye.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\Boss.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\Enemy.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\FlyingEye.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\PossessedCircularSaw.h" />
+    <ClInclude Include="src\modules\Entity\Enemies\RogueKnight.h" />
+    <ClInclude Include="src\modules\Entity\Entity.h" />
+    <ClInclude Include="src\modules\Entity\EntityFactory.h" />
+    <ClInclude Include="src\modules\Entity\EntityTypeEnums.h" />
+    <ClInclude Include="src\modules\Entity\Explosion.h" />
+    <ClInclude Include="src\modules\Entity\GenericEntity.h" />
+    <ClInclude Include="src\modules\Entity\Heart.h" />
+    <ClInclude Include="src\modules\Entity\HurtZone.h" />
+    <ClInclude Include="src\modules\Entity\IceBlizzard.h" />
+    <ClInclude Include="src\modules\Entity\InteractiveElement.h" />
+    <ClInclude Include="src\modules\Entity\InteractiveEntity.h" />
+    <ClInclude Include="src\modules\Entity\Items.h" />
+    <ClInclude Include="src\modules\Entity\Player.h" />
+    <ClInclude Include="src\modules\Entity\ProximitySpikeTrap.h" />
+    <ClInclude Include="src\modules\Entity\ShooterTrap.h" />
+    <ClInclude Include="src\modules\Entity\ShootMode.h" />
+    <ClInclude Include="src\modules\Entity\Trap.h" />
+    <ClInclude Include="src\modules\Entity\VendingMachine.h" />
+    <ClInclude Include="src\modules\Entity\WallTrap.h" />
+    <ClInclude Include="src\modules\Entity\World.h" />
+    <ClInclude Include="src\modules\FinalScreen.h" />
+    <ClInclude Include="src\modules\Game.h" />
+    <ClInclude Include="src\modules\GameScreen.h" />
+    <ClInclude Include="src\modules\GameScreenEnterDoor.h" />
+    <ClInclude Include="src\modules\GameScreenExitDoor.h" />
+    <ClInclude Include="src\modules\GameScreenPaused.h" />
+    <ClInclude Include="src\modules\GameScreenPlayerDead.h" />
+    <ClInclude Include="src\modules\GameScreenPlaying.h" />
+    <ClInclude Include="src\modules\HealthBar.h" />
+    <ClInclude Include="src\modules\Hud.h" />
+    <ClInclude Include="src\modules\IntroScreen.h" />
+    <ClInclude Include="src\modules\ItemBar.h" />
+    <ClInclude Include="src\modules\Kinematics.h" />
+    <ClInclude Include="src\modules\LevelGenerator.h" />
+    <ClInclude Include="src\modules\MainMenuScreen.h" />
+    <ClInclude Include="src\modules\MoneyBar.h" />
+    <ClInclude Include="src\modules\PathFinding.h" />
+    <ClInclude Include="src\modules\PathFindingFollower.h" />
+    <ClInclude Include="src\modules\Physics\AABB.h" />
+    <ClInclude Include="src\modules\Physics\Circle.h" />
+    <ClInclude Include="src\modules\Physics\Collider.h" />
+    <ClInclude Include="src\modules\Physics\CollisionData.h" />
+    <ClInclude Include="src\modules\Physics\CollisionDetection.h" />
+    <ClInclude Include="src\modules\Physics\PhysicsEngine.h" />
+    <ClInclude Include="src\modules\Random.h" />
+    <ClInclude Include="src\modules\Room.h" />
+    <ClInclude Include="src\modules\Screen.h" />
+    <ClInclude Include="src\modules\ScreenController.h" />
+    <ClInclude Include="src\modules\SettingsScreen.h" />
+    <ClInclude Include="src\modules\SFMLUtils.hpp" />
+    <ClInclude Include="src\modules\StateMachine.h" />
+    <ClInclude Include="src\modules\tinyxml2.h" />
+    <ClInclude Include="src\modules\Torch.h" />
+    <ClInclude Include="src\modules\TransitionStateMachine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\shaders\ForegroundAmbient.fs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

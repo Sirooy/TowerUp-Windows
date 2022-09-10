@@ -1,0 +1,17 @@
+<animations>
+    <animation key="DefaultDoorOpen">
+        <frame x="0" y="0" width="144" height="144" repeat-x="6"/>
+    </animation>
+    <animation key="ShopDoorOpen">
+        <frame x="0" y="144" width="144" height="144" repeat-x="6"/>
+    </animation>
+    <animation key="TreasureDoorOpen">
+        <frame x="0" y="288" width="144" height="144" repeat-x="6"/>
+    </animation>
+    <animation key="NewLevelDoorOpen">
+        <frame x="0" y="432" width="144" height="144" repeat-x="6"/>
+    </animation>
+    <animation key="BossDoorOpen">
+        <frame x="0" y="576" width="144" height="144" repeat-x="6"/>
+    </animation>
+</animations>
